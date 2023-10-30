@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-title">
+          CONVERSORES ALURA
+        </h1>
+        <img src="https://user-images.githubusercontent.com/121910576/257302088-d2a9edb6-75e5-4118-aaba-6f53da7715dc.png" class="page-logo" alt="">
+        <div class="w-100 bg-gradient h-50 d-flex-row ">
+            <div class="border-1 container-divisor">
+                <h2>Conversor de Monedas</h2>
+                <p>Elija el monto a cambiar e ingrese la cantidad deseada.</p>
+                <div class="w-50-50">
+                    <select name="" class="option-mod" id="selector">
+                        <option  value="dolar" id="dolar">Dolar</option>
+                        <option  value="euro" id="euro">Euro</option>
+                        <option  value="yen" id="yen">Yen</option>
+                        <option  value="rupia" id="rupia">Rupia</option>
+                    </select>
+                    <input type="text" name="" id="monto-ingresado" placeholder="Ingrese el monto" class="input-mod">
+                </div>
+               <div class="w-50-50">
+                    <button id="calcular" class="btn-calc">Calcular</button>
+               </div>
+                
+                <div class="bg-result mb-5">
+                    <p id="resultado"></p>
+                </div>
+            </div>
+            <div class="border-1 container-divisor">
+                <h2>Conversor de Crypto</h2>
+                <p>Elija el tipo de CryptoMoneda y conviertalo a dolares.</p>
+                <div class="w-50-50">
+                    <select name="" class="option-mod" id="select-crypto">
+                        <option  value="bitcoin" id="bitcoin">Bitcoin</option>
+                        <option  value="ethereum" id="ethereum">Ethereum </option>
+                    </select>
+                    <input type="text" name="" id="monto-crypto" placeholder="Ingrese el monto" class="input-mod">
+                </div>
+               <div class="w-50-50">
+                    <button id="calcularCrypto" class="btn-calc">Calcular</button>
+               </div>
+                
+                <div class="bg-result mb-5">
+                    <p id="resultadoCrypto"></p>
+                </div>
+            </div>
+            <div class="border-1 container-divisor">
+                <h2>Conversor de Temperatura</h2>
+                <p>Convierta de °F a °C o Viceversa.</p>
+                <div class="w-50-50">
+                    <select name="" class="option-mod" id="select-temp">
+                        <option  value="celsius" id="celsius">Celsius</option>
+                        <option  value="farenheit" id="farenheit">Farenheit </option>
+                    </select>
+                    <input type="text" name="" id="temp-input" placeholder="Temperatura" class="input-mod">
+                </div>
+               <div class="w-50-50">
+                    <button id="calcularTemp" class="btn-calc">Calcular</button>
+               </div>
+                
+                <div class="bg-result mb-5">
+                    <p id="resultado-temp"></p>
+                </div>
+        </div>  
+      </div>
+      <script src="script.js"></script>
+</body>
+</html>
